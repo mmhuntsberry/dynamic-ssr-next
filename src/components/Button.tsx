@@ -11,7 +11,8 @@ export interface ButtonProps
   status?: "primary" | "success" | "warning";
 }
 
-const customProp = (props) => (props.brand.length ? `${props.brand}-` : "");
+const customProp = (props: any) =>
+  props.brand.length ? `${props.brand}-` : "";
 
 const StyledButton = styled.button<ButtonProps>`
   border-radius: ${(props) =>
