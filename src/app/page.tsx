@@ -1,6 +1,4 @@
-// app/page.jsx
-// app/page.jsx
-export async function getData() {
+async function getData() {
   // Assume fetching data or using environment variables
   return {
     siteType: process.env.SITE_TYPE || "Banana",
