@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 async function getData() {
   // Assume fetching data or using environment variables
   return {
@@ -8,12 +10,9 @@ async function getData() {
 export default async function Home() {
   const { siteType } = await getData();
   return (
-    <h1
-      style={{
-        backgroundColor: `var(--${siteType.toLowerCase()}-brand-color-primary)`,
-      }}
-    >
-      Welcome to {siteType || "Default"}
+    <h1>
+      Welcome to {siteType || "white-label"}
+      <Button brand={siteType}>Button Text</Button>
     </h1>
   );
 }
