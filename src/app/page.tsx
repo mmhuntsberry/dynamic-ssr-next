@@ -7,5 +7,13 @@ async function getData() {
 
 export default async function Home() {
   const { siteType } = await getData();
-  return <h1>Welcome to {siteType || "Default"}</h1>;
+  return (
+    <h1
+      style={{
+        backgroundColor: `var(--${siteType.toLowerCase()}-brand-color-primary)`,
+      }}
+    >
+      Welcome to {siteType || "Default"}
+    </h1>
+  );
 }

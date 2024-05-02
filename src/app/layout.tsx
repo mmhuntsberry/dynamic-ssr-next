@@ -19,7 +19,11 @@ export default function RootLayout({
       <head>
         <link
           rel="stylesheet"
-          href="https://my-rds-test.s3.us-east-2.amazonaws.com/css/alias.css"
+          href="https://my-rds-test.s3.us-east-2.amazonaws.com/css/css/index.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://my-rds-test.s3.us-east-2.amazonaws.com/css/css/brands/index.css"
         />
       </head>
       <body className={inter.className}>{children}</body>
